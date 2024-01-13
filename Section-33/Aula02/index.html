@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="viewport" content="width=device-width"/>
+        <meta charset="utf-8"/>
+        <title>Aula02</title>
+
+        <!--Tag (style) para visualizar o css no documento html-->
+        <style> 
+            h1 {
+                color: green;
+            }
+            
+            #titulo-principal {
+                background-color: yellow;
+            }
+
+            .letra-azul {
+                color: blue;
+            }
+
+            .letra-vermelha {
+                color: red;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <h1 id="titulo-principal">Nessa aula foi abordado sobre Id e Class</h1>
+        <h2 class="letra-azul">Id</h2>
+        <p class="letra-azul">
+            Os "id" servem como identificadores para os elementos, entretato os "id"
+            serve para apenas um elemento, ou seja, ele é usado para um elemento "importante".
+        </p>
+        <p class="letra-azul">
+            Para usarmos id, escolhemos uma tag e escrevemos o atributo "id="[nome do identificador]"".
+            <br>
+            E no css -para criarmos um id- escrevemos "#[nome do id] {escopo do id}".
+        </p>
+        <p class="letra-azul">
+            O atributo id ele possui uma especificidade muita grande, ou seja, ele possui mais importancia, um exemplo: id > class.
+            <br>
+            Isso quer dizer que o id sobrescrevera a class.
+        </p>
+        <h2 class="letra-vermelha">Class</h2>
+        <p class="letra-vermelha">
+            Já as "class" são identificadores porem podem ser usadas por mais de um elemento, ou seja,
+            quando quisermos dar caracteristicas iguais para vários elementos.
+        </p>
+        <p class="letra-vermelha">
+            Para usarmos class, escolhemos uma tag e escrevemos o atributo "class="[nome do identificador]"".
+            <br>
+            E no css -para criarmos uma class- escrevemos ".[nome da class] {escopo da class}".
+        </p>
+
+    </body>
+
+</html>
