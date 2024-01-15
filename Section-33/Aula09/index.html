@@ -1,0 +1,91 @@
+<!--Tabelas HTML-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula09</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            table caption {
+                margin: 10px;
+            }
+
+            thead th {
+                background: greenyellow;
+            }
+
+            table th, table td {
+                border: 1px solid black;
+                padding: 5px;
+            }
+
+            #campo-vazio {
+                background: black;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Uma tabela com a relação de presenças dos alunos em sala de aula</caption>
+            <thead>
+                <tr>
+                <!--tr == linha-->
+                    <th id="campo-vazio"></th>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                    <th>Sábado</th>
+                    <th>Domingo</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>João</th>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Gabriel</th>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>Lucas</th>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th colspan="7" style="text-align: right;">Total:</th>
+                    <td>15</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
