@@ -6,29 +6,116 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aula10</title>
         <style>
+            * {
+                margin: 0px;
+            }
             fieldset {
-                background: rgba(0,0,0, 0.2);
+                background: rgba(0,0,0, 0.1);
             }
-            fieldset p {
-                margin: 0;
-            }
-            button {
-                margin-top: 10px;
+            div {
+                margin: 15px 0px;
             }
         </style>
     </head>
-    <body>
+    <body> 
         <form action="#" method="get" target="_blank">
             <fieldset>
-                <legend>Formulario Teste</legend>
-                <p>First name:</p>
-                <input type="text" id="first-name" name="first-name" placeholder="Seu primeiro nome" required>
-                <p>Last name:</p>
-                <input type="text" id="last-name" name="last-name" placeholder="Seu ultimo nome" required>
-                <p>
+                
+                <legend>Formulário de inputs</legend>
+
+                <div>
+                    <p>First name:</p>
+                    <input type="text" id="first-name" name="first-name" placeholder="Seu primeiro nome">
+                </div>
+
+                <div>
+                    <p>Last name:</p>
+                    <input type="text" id="last-name" name="last-name" placeholder="Seu ultimo nome">
+                </div>
+                
+                <div>
+                    <label for="dev">Sou um desenvolvedor web?</label>
+                    <input type="checkbox" id="dev" name="dev">
+                <div>
+
+                <div>
+                    <p>Qual é seu genero:</p>
+                    <input type="radio" id="man" name="genero" value="man"><label for="man">Masculino</label>
+                    <input type="radio" id="women" name="genero" value="women"><label for="women">Feminino</label>
+                    <input type="radio" id="other" name="genero" value="other"><label for="other">Outro</label>
+                </div>
+            
+                <div>
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data">
+                </div>
+                
+                <div>
+                    <label for="data-time">Data:</label>
+                    <input type="datetime-local" name="data-time" id="datetime">
+                </div>
+
+                <div>
+                    <label for="time">Hora:</label>
+                    <input type="time" name="time" id="time">
+                </div>
+
+                <div>
+                    <label for="cor">Cor preferida</label>
+                    <input type="color" name="cor" id="cor">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="emai" id="email" placeholder="seuemail@gmail.com">
+                </div>
+
+                <div>
+                    <label for="file">File:</label>
+                    <input type="file" name="file" id="file" accept=".png,.txt,.py" multiple>
+                </div>
+
+                <div>
+                    <label for="number">Number:</label>
+                    <input type="number" name="number" id="number" placeholder="Digite um número:" min="10" max="50" step="5">
+                </div>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+
+                <div>
+                    <label for="range">Range:</label>
+                    <input type="range" name="range" id="range" min="0" max="5">
+                </div>
+
+                <div>
+                    <label for="url">URL:</label>
+                    <input type="url" name="url" id="url">
+                </div>
+
+                <div>
+                    <label for="select">Select any option:</label>
+                    <select name="select" id="select">
+                        <optgroup label="grupo 1">
+                            <option value="1" label="label 1">
+                            <option value="2" label="label 2" disabled>
+                            <option value="3" label="label 3" selected>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="textarea">Area de texto:</label><br>
+                    <textarea name="textarea" id="textarea" cols="15" rows="5"></textarea>
+                </div>
+
+                <div>
                     <button type="submit">Enviar</button>
                     <button type="reset">Reset</button>
-                </p>
+                </div>
+
             </fieldset>
         </form>
     </body>
