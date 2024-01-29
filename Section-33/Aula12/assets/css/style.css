@@ -1,0 +1,70 @@
+/* Seletor all */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Seletor por tag */
+/* p {
+    color: red;
+} */
+
+/* Seletor por descendencia, irmãos */
+/* body div section p,
+body div section h1{
+    color: blue;
+} */
+
+/* Seletor por classe */
+/* .color-rebecca {
+    color: rebeccapurple;
+} */
+
+/* Seletor por classe com descendencia */
+/* .main-content h2.heading{
+    color: darkgreen;
+    font-style: italic;
+} */
+
+/* Seleção por dependencia (atraves de um espaço)*/
+/* .pai .filha{
+    color: red;
+} */
+
+/* O elemento deve possuir as duas classes (class="pai filha") */
+/* .pai.filha{
+    color: red;
+} */
+
+/* Seletores de filhos diretos */
+/* div {
+    margin-left: 20px;
+    color: initial;
+}
+.pai > .filha {
+    color: red;
+} */
+
+/* Seletor de irmãos adjacentes */
+/* .pai h1+p{ 
+    O p que estiver aposum h1 num elemento de classe pai
+    color: blue;
+} */
+/* .pai p+h1 {
+    color: red;
+} */
+/* .pai h1~p{
+    Todos os p apos um h1
+    color: gray;
+} */
+
+/* Seletor de atributo HTML */
+/* Atributo criado */
+[texto="vermelho"] {
+    color: red;
+}
+/* Atributo padrão do HTML */
+[checked] {
+    width: 100px;
+    height: 100px;
+}
