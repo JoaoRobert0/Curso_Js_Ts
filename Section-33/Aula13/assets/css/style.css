@@ -1,0 +1,18 @@
+[meu-atributo="valor"] {
+    color:red;
+}
+[meu-atributo1~="valor2"] {
+    color:aqua;
+}
+[meu-atributo2|="value"] {
+    background: darkcyan;
+}
+[meu-atributo3^="value"] {
+    color: brown;
+}
+[meu-atributo4$="e"] {
+    color: blue;
+}
+[meu-atributo5*="value"] {
+   font-size: 30px;
+}

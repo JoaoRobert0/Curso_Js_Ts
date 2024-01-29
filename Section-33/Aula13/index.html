@@ -1,0 +1,19 @@
+<!-- Seletores de atributos do CSS -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula13</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1>Seletores de atributos CSS</h1>
+    <h2 meu-atributo="valor">[meu-atributo="valor"] Representa um elemento com um atributo de nome meu-atributo, o qual o valor é exatamente valor.</h2>
+    <h2 meu-atributo1="valor1 valor4 valor3 valor2">[meu-atributo1~="valor1"] Representa um elemento com um atributo de nome meu-atributo1, o qual value é uma lista de palavras separadas por espaços, e uma dessas é exatamente valor1.</h2>
+    <h2 meu-atributo2="value-a value-c">[meu-atributo2|="value"] Representa um elemento com um atributo de nome meu-atributo2 o qual o valor pode ser exatamente value ou pode começar com value imediatamente seguido por hífen - (U+002D). Isso somente é usado para linguagens que combinam sub-códigos.</h2>
+    <h2 meu-atributo3="value2222">[meu-atributo3^="value"] Representa um elemento com um atributo com nome attr que tem um valor prefixado (precedido) por value.</h2>
+    <h2 meu-atributo4="value">[meu-atributo4$="e"] Representa um elemento com um atributo de nome meu-atributo4 a que tem como sufixo (seguido) por e</h2>
+    <h2 meu-atributo5="value">[meu-atributo5*="value"] Representa um elemento com um atributo de nome meu-atributo5 o qual valor contém ao menos uma ocorrência de value contido na string.</h2>
+</body>
+</html>
