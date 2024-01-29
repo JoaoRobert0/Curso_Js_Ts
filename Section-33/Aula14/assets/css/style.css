@@ -1,0 +1,72 @@
+.heading:hover {
+    background-color: red;
+    transition: all 1s ease-in-out;
+    color: white;
+}
+/* Link nunca visitado */
+a:link {
+    color: red;
+}
+/* Link já visitado */
+a:visited {
+    color: darkred;
+}
+/* Presionando o elemento */
+a:active{
+    background-color: grey;
+    text-decoration: none;
+}
+
+input:focus {
+    box-shadow: 0 0 10px red;
+    border: solid 5px black;
+}
+
+input:disabled {
+    background-color: red;
+    cursor: not-allowed;
+}
+
+input:enabled {
+    color: aqua;
+}
+
+input:checked {
+    width: 50px;
+    height: 50px;
+}
+
+input:checked + h1 {
+    color: blue;
+    font-style: italic;
+}
+
+/* Pseudo classe not(), inverte a ação */
+input:not(:checked) + h1 {
+    color: grey;
+}
+
+ul {
+    margin: 0px;
+    padding: 10px;
+}
+ul li:last-child {
+    background-color: pink;
+}
+
+
+/* 
+Par 
+.section :nth-child(odd) {
+    color:red;
+}
+
+Impar
+.section :nth-child(even) {
+    color:blue;
+} */
+
+/* De 3 em 3 a partir do 1 elemento */
+.section :nth-child(3n + 1) {
+    color:blue;
+}
