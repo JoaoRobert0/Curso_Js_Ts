@@ -1,0 +1,30 @@
+ul li::before{
+    content: "::before ";
+    display: block;
+    background: red;
+}
+
+ul li::after{
+    content: " ::after";
+    display: block;
+    background: blue;
+    margin: 0px 0px 20px 0px;
+}
+
+p::first-letter{
+    font-size: 30px;
+}
+
+p::first-line{
+    background: blue;
+}
+
+p::selection{
+    background: black;
+    color: white;
+}
+
+::placeholder{
+    font-style: italic;
+    color:blueviolet;
+}
