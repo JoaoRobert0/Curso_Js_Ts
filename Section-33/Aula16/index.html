@@ -1,0 +1,41 @@
+<!-- Especificidade CSS -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula16</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1>Especificidade CSS</h1>
+    <p>A especificação é a maneira de como os navegadores definem quais valores de propriedades são os mais relevantes para o elemento a ser utilizado. A especificação é baseada apenas nas regras impostas na composição de diferentes tipos de seletores.</p>
+    <div>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Classe, Pseudo-classe</th>
+                <th>Elemento, Pseudo-elemento</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </table>
+    </div>
+    <p>A linha vermelha, contem a maior especificidade das demais linhas.</p>
+    <p>Entretanto, se houvesse um seletor com a mesma especificidade, a selecionada seria o seletor mais recente</p>
+    <p>E temos a propiedade <span class="destaque">!important</span> que possuira maior especificidade</p>
+</body>
+</html>
