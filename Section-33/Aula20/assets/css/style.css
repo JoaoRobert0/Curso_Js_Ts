@@ -1,0 +1,20 @@
+p{
+    /* Tamanho da fonte */
+    font-size: 10px;
+    /* Negrito */
+    font-weight: bold;
+    /* Da esquerda para a direita */
+    direction: ltr; 
+    /* Espaçamento entre letras */
+    letter-spacing: 1px;
+    /* Espaçamento entre palavras */
+    word-spacing: 1px;
+    /* Altura da linha */
+    line-height: 40px;
+    /* Orientação do texto */
+    text-align: left;
+    /* Tamanho da identação */
+    text-indent: 50px;
+    /* Sombra */
+    text-shadow: 0.5px -0.5px 1px red;
+}
