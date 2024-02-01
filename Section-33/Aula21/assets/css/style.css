@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+}
+.pai{
+    height: 300vh;
+}
+.filha1, .filha2, .filha3, .teste{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    overflow: hidden;
+    /* position: static; padrão */
+}
+
+.filha3 {
+    /* Posicionamento em relação ao elemento anterior */
+    position: relative;
+    background-color: green;
+    top: 100px;
+    left: 10px;
+}
+.filha2{
+    position: relative;
+    background-color: turquoise;
+    /* Cria uma camada */
+    /* z-index: -1; */
+}
+
+.filha1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px -150px;
+    /* z-index: -2; */
+}
+
+span{
+    /* Ele respeitara a relatividade do elemento que esta inserido */
+    position: absolute;
+    background-color: blue;
+    top: 20px;
+    right: -19px;
+}
+
+.teste{
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 50%;
+}
