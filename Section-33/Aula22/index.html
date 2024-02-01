@@ -1,0 +1,43 @@
+<!-- Media queries e breakpoints -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula22</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1>Media queries e breakpoints</h1>
+    <p>
+        As media queries e breakpoints são conceitos fundamentais no desenvolvimento de designs responsivos em CSS, permitindo que você adapte o estilo e layout de uma página da web com base nas características do dispositivo ou no tamanho da tela. Vamos explorar esses conceitos em mais detalhes:</p>
+    <h2>Media Queries:</h2>
+    <p><b>Definição:</b> Media queries são regras CSS que se aplicam apenas quando determinadas condições são atendidas, geralmente relacionadas às características da mídia, como largura da tela, altura da tela, orientação, resolução, entre outras.</p>
+    <p><b>Sintaxe:</b></p>
+    <pre><code>@media only screen and (max-width: 600px) {
+    /* Estilos aplicados apenas para telas com largura máxima de 600 pixels */
+    body {
+    font-size: 14px;
+    }
+}</code></pre>
+    <h2>Breakpoints</h2>
+    <p><b>Definição:</b> Breakpoints são os pontos específicos em que você escolhe aplicar uma media query para modificar o layout ou estilo de uma página. Geralmente, esses pontos correspondem a tamanhos de tela específicos onde uma mudança no design é necessária para otimizar a experiência do usuário.</p>
+    <p><b>Exemplos de uso:</b></p>
+    <pre><code>/* Estilos padrão para todas as telas */
+
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para telas menores (smartphones) */
+    /* ... */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos específicos para telas médias (tablets) */
+    /* ... */
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Estilos específicos para telas grandes (laptops e desktops) */
+    /* ... */
+}</code></pre>
+</body>
+</html>

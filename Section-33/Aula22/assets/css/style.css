@@ -1,0 +1,19 @@
+pre {
+    background-color: black;
+}
+code {
+    color: white;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 414px){
+    body {
+        font-size: 0.8rem;
+        color: blue;
+    }
+}
+
+@media only screen and (min-width: 415px){
+    body {
+        color: red;
+    }
+}
