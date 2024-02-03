@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font: sans-serif;
+    font-size: 20px;
+}
+.grid{
+    max-width: 1200px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); */
+    /* Nomear as posições */
+    grid-template-columns: 
+    [um] 1fr
+    [dois] 1fr
+    [tres] 1fr
+    [quatro];
+    margin: 0 auto 20vh;
+    gap: 30px;
+}
+.grid div{
+    background-color: tomato;
+    min-height: 100px;
+}
+.grid div:nth-child(5){
+    background: pink;
+    /* grid-column: um / quatro; */
+    grid-area: 4 / 1 / 5 / 4;
+}
+
+/* Grid template areas */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.grid-2{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+        'header header'
+        'nav main'
+        'rodape rodape';
+}
+.grid-2 div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    background: pink;
+}
+.grid-2 div:nth-child(2){
+    grid-area: nav;
+    background: red;
+}
+.grid-2 div:nth-child(3){
+    grid-area: main;
+    background-color: cyan;
+}
+.grid-2 div:nth-child(4){
+    grid-area: rodape;
+    background: orange;
+}
+
+@media (max-width: 768px){
+    .grid-2{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas: 
+            'header'
+            'main'
+            'nav'
+            'rodape';
+    }
+}
