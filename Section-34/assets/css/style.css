@@ -2,12 +2,12 @@
     --primary-color: #0A1128;
     --white-color: #FFFFFF;
     --gap: 3rem; /* 10px * 3 */
+    --max-width: 1200px
 }
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html{
@@ -16,7 +16,7 @@ html{
 
 /* 
 font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;                                           
 */
 
 body{
@@ -65,12 +65,59 @@ h6{
     background-color: var(--white-color);
 }
 
+.section{
+    min-height: 100vh;
+}
+
+#home{
+    padding: 5rem 0 0;
+}
+
 .main-content{
-    max-width: 1200px;
+    max-width: var(--max-width);
     margin: 0 auto;
     padding: var(--gap);
 }
 
-.section{
-    min-height: 100vh;
+.menu{
+    background-color: var(--white-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menu div{
+    max-width: var(--max-width);
+    display: flex;
+    height: 6rem;
+    padding: 0 var(--gap);
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu div .logo{
+    font-size: 2.3rem;
+}
+
+.menu a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.menu li{
+    list-style-type: none;
+    display: inline;
+    padding: 0 2rem;
+    height: 6rem;
+}
+
+@media (max-width: 800px){
+    .menu{
+        z-index: -1;
+    }
+
+    #home{
+        padding: 0;
+    }
 }
